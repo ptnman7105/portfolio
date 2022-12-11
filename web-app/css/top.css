@@ -1,0 +1,79 @@
+@charaset "UTF-8";
+
+html {
+    font-family: sans-serif;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+.all {
+    margin: 0 auto 0 auto;
+    max-width: 960px;
+    padding-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+.button1 {
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 300px;
+}
+.button2 {
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 400px;
+}
+.button3 {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    left: 40px;
+    top: 30px;
+}
+
+.table {
+    position: relative;
+    left:35px;
+    font-size: 24px;
+    text-align:left;
+}
+
+.lists{
+    position: relative;
+    top: 20px;
+    padding-bottom: 50px;
+}
+
+.table2 {
+    position: relative;
+    left:165px;
+    font-size: 24px;
+    text-align:left;
+}
+
+.all-table{
+    position: relative;
+    top: 30px;
+}
+.table-item{
+    display: flex;
+    padding-bottom: 10px;
+}
+.saboten{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

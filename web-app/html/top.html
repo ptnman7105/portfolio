@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/top.css">
+    </head>
+    <div class="all">
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <div id="app">
+        <h1 class="title">文字数カウンター</h1> 
+        <img src="../img/saboten.png" alt="サボテンのキャラクター" class="saboten">
+        <form class="form">
+            <textarea name="text" cols="130" rows="15" v-model="number" ></textarea>
+        </form>
+        <input type="button" value="カウント開始" id="submit" v-on:click="onClick" class="button1">
+        <input type="button" value="文字をクリア" id="submit" v-on:click="clear" class="button2">
+
+        <div v-if="flag" class="all-table">
+            <div class="table-item">
+                <table class="table">
+                    <tr>
+                        <th>文字数</th>
+                        <td>:{{count}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>レポート許容範囲(8割)</th>
+                        <td>:{{range}}</td>
+                    </tr>
+                </table>
+
+
+
+                <table class="table2">
+                    <tr>
+                        <th>文体統一</th>
+                        <td>:{{match}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>レポート許容範囲(9割)</th>
+                        <td>:{{range2}}</td>
+                    </tr>
+                </table>
+            </div>
+            
+
+            <input type="button" value="変更が必要な箇所を表示" id="submit" v-on:click="open_detection" class="button3">
+            <ul v-if="flag2" class="lists" >
+                <li v-for="detection_item in detection_items">{{detection_item}}</li>
+            </ul>
+        </div>
+
+        </div>
+
+
+
+
+        <script src="../java/top.js"></script>
+    </body>
+</div>
+    
+</html>
