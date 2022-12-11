@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    height: 952px;
+}
+.profile_all{
+    width: 1900px;
+    height: auto;
+    margin: auto;
+}
+.profile{
+    border-bottom: solid 3px #7e7e7e;
+    margin-bottom: 50px;
+    background-color: white;
+    z-index: 30;
+    position: sticky;
+    width: auto;
+    height: 150px;
+    top: 0;
+}
+.header{
+    display: flex;
+    position: relative;
+    width: 1900px;
+    margin: 0;
+    margin-right: 0px;
+}
+h1{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 0;
+    position: relative;
+    left: 100px;
+    float: left;
+    top: 25px;
+}
+span{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.header_box{
+    position: relative;
+    left: 500px;
+    top: 20px;
+    margin: 0;
+}
+.header_2{
+    display: flex;
+}
+a{
+    width: 160px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+#top:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+}
+#profile:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+}
+#gallery:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+}
+#twitter:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+}
+#contact:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+}
+.image{
+     width: 100px;
+     height: 400px;
+     position: relative;
+     margin-left: 22%;
+     float: left;
+}
+.profile_img{
+    width: auto;
+    height: 100%;
+    margin-top: 150px;
+    border: double 5px #99FF99;
+    animation: slidein 1.6s;  
+}
+@keyframes slidein{
+    0%{
+        opacity:0;
+        transform: translateX(-64px);
+        }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.sub_title{
+    position: relative;
+    right: 60px;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    top: 2px;
+    margin-left: 915px;
+    animation: fadein 1.6s;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.soru_text{
+    width: 700px;
+    height: 700px;
+    margin-left: 870px;
+    margin-top: -90px;
+    animation: slidein 1.6s;
+}
+h2{
+    font-family: "游明朝",serif;
+    font-size: 32px;
+    font-weight: 00;
+    animation: slidein 1.6s;
+}
+p{
+    font-family: "游明朝",serif;
+    font-size: 16px;
+    font-weight: 400;
+    animation: slidein 1.6s;
+}
+.newline{
+    white-space: pre;
+}
+.copyright{
+    text-align: center;
+    background-color: #FFCC99;  
+    padding: 20px; 
+    color: white;
+}
